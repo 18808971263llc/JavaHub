@@ -1,0 +1,63 @@
+import com.sun.security.jgss.GSSUtil;
+
+public class duixiang {
+   String mingzi;
+   double a;
+   double b;
+   double song;
+   double wei;
+   String ning;
+
+
+
+
+
+    public void xuesheng(){
+
+       System.out.println(mingzi +"的总成绩为：" + (a+b) );
+   }
+   public void pingjiufen(){
+
+       System.out.println(mingzi + "的平均分为：" +(a+b)/2.0);
+   }
+
+   public void xingchan(){
+       System.out.println(this);
+   }
+   public void puapp( double song){
+       if(this.song>song){
+           System.out.println("分数够了");
+       }else {
+           System.out.println("分数不足");
+       }
+   }
+   public void gozaoqi(){
+       System.out.println("无参数构造器被触发了");
+   }
+   public void gozaoqi( String ning ,double wei){
+       System.out.println("有参数构造器被触发了");
+       this.wei=wei;
+       this.ning=ning;
+
+   }
+
+   public static void hellowode1(){
+       for (int i = 1; i < 10; i++) {
+           for (int j = 1; j <=i ; j++) {
+               System.out.print(i +"x" +j+"="+(i*j)+" ");
+           }
+           System.out.println();
+       }
+   }
+   public static void hellowode2(){
+       System.out.println("她不在了");
+   }
+   public static void hellowede3(){
+       double a=3.14;
+       int b=13;
+       double r=b*a;
+       System.out.println(r);
+   }
+
+}
+
